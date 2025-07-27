@@ -4,3 +4,8 @@
 n + nn + nnn, где n не перемножаются, а конкатенируются
 
 */
+let firstNumber = 5;
+firstNumber = String(firstNumber);
+let secondNumber = firstNumber + firstNumber;
+let thirdNumber = firstNumber + firstNumber + firstNumber;
+console.log(Number(firstNumber) + Number(secondNumber) + Number(thirdNumber))
