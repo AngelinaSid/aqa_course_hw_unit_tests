@@ -5,16 +5,18 @@
  */
 const word = 'hello';
 let vowelsAndConsonantsResult = '';
-const vowels = ("aeuio");
+const vowels = "aeuio";
+let consonants = "bcdfghjklmnpqrstvwxz";
 let vowelCount = 0;
 let consonantCount = 0;
 for (let i = 0; i < word.length; i++){
-    if (vowels.includes(word[i])) {
+    const currentChar = word[i].toLowerCase();
+    if (vowels.includes(currentChar)) {
         vowelCount++;
-    } else if  (word[i] >= 'a' && word[i] <= 'z') {
+    } 
+    if (consonants.includes(currentChar)) {
         consonantCount++;
-
-    }   
+    }
 }
 vowelsAndConsonantsResult = `${word} contains ${vowelCount} vowels and ${consonantCount} consonants`;
 
