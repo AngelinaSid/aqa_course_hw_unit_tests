@@ -7,7 +7,14 @@
 */
 
 function findMissingNumber(numbers) {
-  // Ваш код
+ const sorted = numbers.slice().sort((a, b) => a - b);
+
+  if (sorted[0] > 1) return 1;
+  const missingInside = sorted.find((num, i) => i > 0 && num !== sorted[i - 1] + 1);
+  if (missingInside) return sorted[sorted.indexOf(missingInside) - 1] + 1;
+  return sorted[sorted.length - 1] + 1;
 }
+
+
 
 export { findMissingNumber };
