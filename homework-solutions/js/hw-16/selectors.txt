@@ -16,7 +16,7 @@ Task 2.
 [multitag2="on"]
   Xpath/CSS: всех детей элемента ‘div’ с классом ‘content’ 
 //div[@class='content']/*
-div.content
+div.content*
   CSS: все элементы ‘span’ и  ‘button’ с классом ‘content’ 
 span.content, button.content
   Xpath: используя за основу селектор //*[@id='submit'] найти элемент body 
